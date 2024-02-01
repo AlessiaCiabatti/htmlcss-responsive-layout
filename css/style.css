@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --blue: #0084fd;
+  --lightblue: #b5ddff;
+  --violet: #9593e6;
+  --p-grey: #5a6e7f;
+  --free: #fdc15f;
+  --footer-grey: #333333;
+}
+
+body{
+  font-family: 'PT Sans', sans-serif;;
+}
+
+.l-height{
+  line-height: 20px;
+}
+
+.blue-margin{
+  margin-bottom: 40px;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.d-bug{
+  background-color: red;
+  border: 1px solid black;
+}
+
+header .menu{
+  background-color: var(--blue);
+  height: 75px;
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+
