@@ -41,8 +41,11 @@ text-align: start;
   padding: 0 20px; 
 }
 
-.btn-border{
+.btn-style{
   border-radius: 20px;
+  padding: 10px 50px;
+  font-size: smaller;
+  letter-spacing: 5px;
 }
 
 /* container generale solo width e margin 0 auto */
@@ -161,11 +164,11 @@ header .commands ul{
 
 .demo .btn{
   background-color: var(--blue);
-  padding: 12px 50px;
-  font-size: smaller;
-  letter-spacing: 5px;
   margin-bottom: 40px;
 }
+/* /demo */
+
+
 /* strategic */
 .strategic{
   background-color: var(--violet);
@@ -250,7 +253,11 @@ header .commands ul{
   margin-bottom: 40px;
 }
 
-.testimonials .nat,.celia,.bob,i{
+.testimonials .nat,.celia,.bob{
+  color: white;
+}
+
+.testimonials i{
   color: white;
 }
 
@@ -271,10 +278,6 @@ flex-direction: column;
 padding-bottom: 33px
 }
 
-.benefits .card{
-  height: 400px;
-}
-
 .benefits .col{
   margin-bottom: 32px;
 }
@@ -291,15 +294,29 @@ padding-bottom: 33px
   padding: 75px 40px 0;
 }
 
-.container:last-child h2{
+.benefits .container:last-child h2{
   color: var(--violet);
   font-size: 2.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-.container:last-child h3{
+.benefits .container:last-child h3{
   color: var(--violet);
+  margin-bottom: 25px;
 }
+
+.benefits p{
+  margin-bottom: 30px;
+  color: var(--p-grey);
+}
+
+.benefits .btn{
+  background-color: var(--violet);
+  color: white;
+  text-decoration: none;
+  border-bottom: 50px;
+}
+
 /* /benefits */
 
 /* about us */
