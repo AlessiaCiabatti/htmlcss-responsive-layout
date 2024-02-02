@@ -38,7 +38,7 @@ text-align: start;
 }
 
 .col{
-  padding: 0 15px; 
+  padding: 0 20px; 
 }
 
 .btn-border{
@@ -115,7 +115,6 @@ header .commands ul{
 .demo .card{
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding-left: 30px;
   padding-right: 30px;
   background-color: var(--lightblue);
@@ -142,6 +141,10 @@ header .commands ul{
 .demo .card a{
   text-decoration: none;
   color: white;
+}
+
+.demo .phone{
+  justify-content: center;
 }
 
 .demo .phone img{
@@ -171,6 +174,48 @@ header .commands ul{
 .strategic .row{
   flex-direction: column;
   margin-top: 80px;
+}
+
+.strategic img{
+  height: 300px;
+  margin-top: 65px;
+  margin-bottom: 20px;
+}
+
+.card-border{
+  background-color: white;
+  border-radius: 55px;
+  margin-top: 40px;
+  padding: 0 20px;
+  margin-bottom: 65px;
+}
+
+.strategic h2,p{
+  color: white;
+}
+
+.strategic h3{
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.strategic .card-border p{
+  color: black;
+  font-style: italic;
+  margin-bottom: 45px;
+}
+
+.strategic h2{
+  margin-bottom: 60px;
+}
+
+.strategic i{
+  background-color: var(--violet);
+  padding: 16px 16px;
+  border-radius: 55%;
+  font-size: 15px;
+  color: black;
+  margin-bottom: 35px;
 }
 
 /* /strategic */
@@ -295,10 +340,10 @@ padding-bottom: 33px
     justify-content: left;
   }
 
-  .demo .card:first-child{
-    display: block;
+  .demo .phone{
+    justify-content: left;
   }
-  
+
   .testimonials .card{
     display: flex;
     align-items: center;
