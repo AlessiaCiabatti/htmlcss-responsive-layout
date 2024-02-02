@@ -92,12 +92,21 @@ header .commands ul{
 }
 
 .commands ul li{
-  padding: 15px;
+  padding: 10px;
 }
 
-.commands ul a{
+.commands li a{
   text-decoration: none;
   color: white;
+}
+
+.commands ul li a:last-child{
+  color: black;
+}
+
+.commands li:last-child{
+  background-color: white;
+  border-radius: 30px;
 }
 /* /header */
 
@@ -316,16 +325,65 @@ padding-bottom: 33px
   text-decoration: none;
   border-bottom: 50px;
 }
-
 /* /benefits */
 
 /* about us */
 .about-us h2{
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .about-us .row{
   flex-direction: column;
+}
+
+.about-us h2{
+  color: var(--violet);
+  font-size: 2.5rem;
+  margin-top: 100px;
+}
+
+.about-us .text{
+  margin-bottom: 70px;
+}
+
+.about-us img{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.about-us .img-about{
+  position: relative;
+  margin-top: 60px;
+}
+
+.about-us .img-about i{
+  position: absolute;
+  top: -10px;
+  left: 125px;
+  color: var(--violet);
+  font-size: 4rem;
+}
+
+.about-us h3{
+  color: var(--violet);
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.about-us .btn{
+  background-color: var(--violet);
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  padding: 7px 15px;
+}
+
+.about-us i{
+  color: white;
+  margin-right: 10px;
+  font-size: 1rem;
 }
 /* /about us */
 
@@ -337,6 +395,8 @@ padding-bottom: 33px
 .get-started .row{
   padding-top: 70px;
   padding-bottom: 65px;
+  margin-top: 80px;
+  color: white;
 }
 
 .get-started .col:first-child{
@@ -344,20 +404,47 @@ padding-bottom: 33px
 }
 
 .get-started .free{
-  height: 165px;
-  margin-top: 50px;
-}
-
-.get-started h2{
-  padding-bottom: 50px;
+  margin-top: 30px;
 }
 
 .get-started .col:last-child{
-  height: 135px;
   margin-top: 40px;
 }
 
-/* get started */
+.get-started span:first-child{
+  font-size: smaller;
+  letter-spacing: 5px;
+}
+
+.get-started .simple{
+  margin-top: 30px;
+  padding: 0px 30px;
+}
+
+.get-started .free h2{
+  color: var(--free);
+  font-size: 3.5rem;
+  padding-bottom: 25px;
+}
+
+.get-started .btn{
+  background-color: white;
+  padding: 20px 60px;
+  text-decoration: none;
+  border-radius: 30px;
+  color: var(--violet);
+}
+
+.bottom p{
+  margin-top: 50px;
+}
+
+.bottom a{
+  color: white;
+}
+/* /get started */
+
+/* footer */
 .footer{
   background-color: var(--footer-grey);
   color: white;
@@ -372,6 +459,12 @@ padding-bottom: 33px
 .footer .col:last-child{
   margin-top: 70px;
 }
+
+footer .card a{
+  color: var(--violet);
+}
+/* /footer */
+
 /* RESPONSIVE */
 
 /* tablet */
@@ -417,6 +510,10 @@ padding-bottom: 33px
 
   .benefits .col{
     width: 50%;
+  }
+  
+  .benefits .container:last-child h2{
+    font-size: 3.3rem;
   }
 
   .about-us .col:first-child{
@@ -467,6 +564,10 @@ padding-bottom: 33px
 
   .aboutus .col:first-child{
     width: 70%;
+  }
+
+  .about-us h3{
+    width: 250px
   }
 
   .aboutus .col:last-child{
