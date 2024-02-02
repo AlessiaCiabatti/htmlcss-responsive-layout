@@ -15,11 +15,18 @@
 
 body{
   font-family: 'PT Sans', sans-serif;
+}
+
+.text-center{
   text-align: center;
 }
 
+.text-start{
+text-align: start;
+}
+
 .l-height{
-  line-height: 20px;
+  line-height: 29px;
 }
 
 .blue-margin{
@@ -34,6 +41,10 @@ body{
   padding: 0 15px; 
 }
 
+.btn-border{
+  border-radius: 20px;
+}
+
 /* container generale solo width e margin 0 auto */
 .container{
   width: 100%;
@@ -45,6 +56,8 @@ body{
   background-color: red;
   border: 1px solid black;
 }
+
+
 
 /* header */
 header .row{
@@ -60,19 +73,38 @@ header .menu{
   z-index: 999;
 }
 
+.hamburger i{
+  color: white;
+  font-size: 1.5rem;
+}
+
 header .menu .commands{
   display: none;
 }
 
-/* main */
+header .commands ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
 
+.commands ul li{
+  padding: 15px;
+}
+
+.commands ul a{
+  text-decoration: none;
+  color: white;
+}
+/* /header */
+
+/* main */
 /* demo */
 .demo {
   padding-top: 125px;
 }
 
 .demo .col{
-  /* height: 360px; */
   margin-bottom: 25px;
 }
 
@@ -80,21 +112,57 @@ header .menu .commands{
   flex-direction: column;
 }
 
-/* .demo .col:first-child{
-  height: 610px;
-} */
-
 .demo .card{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: var(--lightblue);
-  height: 100%;
   border-radius: 35px;
   padding-top: 30px;
 }
 
-.demo .card h2{
-  font-size: 1.5rem;
+.demo .card h2,i{
+  font-size: 1.3rem;
+  color: var(--blue);
 }
 
+.icon{
+  font-size: 5rem;
+  margin-bottom: 30px;
+}
+
+.demo .card p{
+  color: var(--p-grey);
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.demo .card a{
+  text-decoration: none;
+  color: white;
+}
+
+.demo .phone img{
+  height: 270px;
+  width: 200px;
+  margin-top: 40px;
+}
+
+.fa-apple{
+  color: white;
+  font-size: 15px;
+  padding-right: 3px;
+}
+
+.demo .btn{
+  background-color: var(--blue);
+  padding: 12px 50px;
+  font-size: smaller;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+}
 /* strategic */
 .strategic{
   background-color: var(--violet);
@@ -103,26 +171,8 @@ header .menu .commands{
 .strategic .row{
   flex-direction: column;
   margin-top: 80px;
-  margin-bottom: 70px;
-  padding-bottom: 65px;
 }
 
-.strategic .col:first-child{
-  height: 447px;
-}
-
-.strategic .planning{
-  height: 236px;
-  border-bottom: 40px;
-}
-
-.strategic .planning h2{
-  padding-bottom: 65px
-}
-
-.strategic .col:last-child{
-  height: 615px;
-}
 /* /strategic */
 
 /* testimonials */
@@ -134,19 +184,6 @@ header .menu .commands{
 .testimonials .col{
   margin-bottom: 35px;
 }
-
-/* .testimonials .col:first-child{
-  height: 335px;
-} */
-
-/* .testimonials .nat,.bob{
-  height: 500px;
-}
-
-.testimonials .celia{
-  height: 530px;
-} */
-/* /testimonials */
 
 /* benefits */
 .benefits{
@@ -167,27 +204,21 @@ padding-bottom: 33px
   margin-bottom: 32px;
 }
 
+.benefits .card{
+  background-color: white;
+  border-radius: 20px;
+}
 /* /benefits */
 
 /* about us */
-.about-us .col:first-child{
-  margin-top: 96px;
-  margin-bottom: 80px;
-  height: 545px;
-}
+
 
 .about-us h2{
   margin-bottom: 60px;
 }
 
-.about-us .middle{
-  height: 330px;
-  margin-bottom: 60px;
-}
-
-.about-us .col:last-child{
-  height: 420px;
-  margin-bottom: 80px;
+.about-us .row{
+  flex-direction: column;
 }
 /* /about us */
 
@@ -245,7 +276,9 @@ padding-bottom: 33px
 
   header .container .row,
   .demo .row,
-  .benefits .row{
+  .strategic .row,
+  .benefits .row,
+  .about-us .row{
     flex-wrap: wrap;
     flex-direction: row;
   }
@@ -258,6 +291,14 @@ padding-bottom: 33px
     width: calc(100% / 1.5);
   }
 
+  .demo .card:first-child{
+    justify-content: left;
+  }
+
+  .demo .card:first-child{
+    display: block;
+  }
+  
   .testimonials .card{
     display: flex;
     align-items: center;
@@ -265,6 +306,14 @@ padding-bottom: 33px
 
   .benefits .col{
     width: 50%;
+  }
+
+  .about-us .col:first-child{
+    width: 60%;
+  }
+
+  .about-us .col:last-child{
+    width: 40%;
   }
 }
 
@@ -280,6 +329,22 @@ padding-bottom: 33px
 
   header .menu .commands{
     display: block;
+  }
+
+  .strategic .col{
+    width: 50%;
+  }
+
+  .benefits .col{
+    width: calc(100% / 3);
+  }
+
+  .aboutus .col:first-child{
+    width: 70%;
+  }
+
+  .aboutus .col:last-child{
+    width: 30%;
   }
 
 }
