@@ -177,12 +177,12 @@ header .commands ul{
 }
 
 .strategic img{
-  height: 300px;
-  margin-top: 65px;
+  width: 100%;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
-.card-border{
+.strategic .col:last-child{
   background-color: white;
   border-radius: 55px;
   margin-top: 40px;
@@ -190,7 +190,8 @@ header .commands ul{
   margin-bottom: 65px;
 }
 
-.strategic h2,p{
+.strategic h2,
+.strategic p{
   color: white;
 }
 
@@ -199,14 +200,14 @@ header .commands ul{
   margin-bottom: 30px;
 }
 
-.strategic .card-border p{
+.strategic .bottom p{
   color: black;
   font-style: italic;
   margin-bottom: 45px;
 }
 
 .strategic h2{
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .strategic i{
@@ -217,18 +218,47 @@ header .commands ul{
   color: black;
   margin-bottom: 35px;
 }
-
 /* /strategic */
 
 /* testimonials */
+.testimonials .container:first-child{
+  margin-top: 70px;
+  padding: 0 55px;
+  margin-bottom: 60px;
+}
+
 .testimonials .row{
   flex-direction: column;
   margin-bottom: 77px;
 }
 
-.testimonials .col{
+.testimonials img{
+  width: 100%;
+}
+
+.testimonials .card{
+  background-color: var(--violet);
+  border-radius: 40px;
+  padding: 40px 0px;
   margin-bottom: 35px;
 }
+
+.testimonials h2{
+  color: var(--violet);
+  font-size: 1.8rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.testimonials .nat,.celia,.bob,i{
+  color: white;
+}
+
+.testimonials h3{
+  margin-top: 30px;
+}
+
+/* /testimonials */
 
 /* benefits */
 .benefits{
@@ -252,12 +282,27 @@ padding-bottom: 33px
 .benefits .card{
   background-color: white;
   border-radius: 20px;
+  padding: 40px 30px;
+}
+
+.benefits .container:first-child h2{
+  color: white;
+  font-size: 1.8rem;
+  padding: 75px 40px 0;
+}
+
+.container:last-child h2{
+  color: var(--violet);
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.container:last-child h3{
+  color: var(--violet);
 }
 /* /benefits */
 
 /* about us */
-
-
 .about-us h2{
   margin-bottom: 60px;
 }
@@ -310,7 +355,6 @@ padding-bottom: 33px
 .footer .col:last-child{
   margin-top: 70px;
 }
-
 /* RESPONSIVE */
 
 /* tablet */
@@ -383,6 +427,21 @@ padding-bottom: 33px
 
   .strategic .col{
     width: 50%;
+  }
+
+  .strategic .col:last-child{
+    margin-top: 300px;
+    width: 400px;
+  }
+
+  .strategic .top img{
+    margin-bottom: 150px;
+    margin-top: 140px;
+    width: 400px;
+  }
+
+  .strategic .bottom img{
+    width: 220px;
   }
 
   .benefits .col{
