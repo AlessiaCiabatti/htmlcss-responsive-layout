@@ -21,10 +21,6 @@ body{
   text-align: center;
 }
 
-.text-start{
-text-align: start;
-}
-
 .l-height{
   line-height: 29px;
 }
@@ -45,7 +41,7 @@ text-align: start;
   border-radius: 20px;
   padding: 10px 50px;
   font-size: smaller;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
 }
 
 /* container generale solo width e margin 0 auto */
@@ -59,8 +55,6 @@ text-align: start;
   background-color: red;
   border: 1px solid black;
 }
-
-
 
 /* header */
 header .row{
@@ -100,7 +94,7 @@ header .commands ul{
   color: white;
 }
 
-.commands ul li a:last-child{
+.commands ul li .black{
   color: black;
 }
 
@@ -244,8 +238,20 @@ header .commands ul{
   margin-bottom: 77px;
 }
 
+.testimonials .col{
+  justify-content: center;
+}
+
+.testimonials .col:last-child{
+  font-size: 20px;
+}
+
 .testimonials img{
-  width: 100%;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
 .testimonials .card{
@@ -272,8 +278,9 @@ header .commands ul{
 
 .testimonials h3{
   margin-top: 30px;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
 }
-
 /* /testimonials */
 
 /* benefits */
@@ -412,13 +419,14 @@ padding-bottom: 33px
 }
 
 .get-started span:first-child{
-  font-size: smaller;
   letter-spacing: 5px;
+  font-size: 20px;
 }
 
 .get-started .simple{
   margin-top: 30px;
   padding: 0px 30px;
+  font-size: 1.8rem;
 }
 
 .get-started .free h2{
@@ -433,6 +441,8 @@ padding-bottom: 33px
   text-decoration: none;
   border-radius: 30px;
   color: var(--violet);
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .bottom p{
@@ -498,9 +508,21 @@ footer .card a{
     justify-content: left;
   }
 
+  .demo .col .clean{
+    height: 580px;
+  }
+
   .strategic .img{
     width: 100%;
     height: 100%;
+  }
+
+  .testimonials .col{
+    text-align: left;
+  }
+
+  .testimonials h2{
+    font-size: 2.3rem;
   }
 
   .testimonials .card{
@@ -523,6 +545,14 @@ footer .card a{
   .about-us .col:last-child{
     width: 40%;
   }
+
+  .get-started .free p{
+    padding: 0 150px;
+  }
+
+  .footer p{
+    padding: 0 150px;
+  }
 }
 
 /* desktop */
@@ -537,6 +567,10 @@ footer .card a{
 
   header .menu .commands{
     display: block;
+  }
+
+  .demo .col .clean{
+    height: 520px;
   }
 
   .strategic .col{
@@ -574,4 +608,12 @@ footer .card a{
     width: 30%;
   }
 
+
+  .get-started .free p{
+    padding: 0 360px;
+  }
+
+  .footer p{
+    padding: 0 360px;
+  }
 }
